@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TokenSC — Solana token risk scanner (free beta)</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;color:#111}
+h1{font-size:28px}.v{display:inline-block;padding:2px 8px;border-radius:6px;margin-right:6px}
+.g{background:#dcfce7}.y{background:#fef9c3}.r{background:#fee2e2}table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #ddd;padding:6px 8px;text-align:left}.note{font-size:13px;color:#555}.btn{display:inline-block;background:#229ED9;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}table{display:block;overflow-x:auto}@media(max-width:480px){body{margin:20px auto;font-size:15px}h1{font-size:22px}}</style></head><body>
+<p style="background:#fef3c7;padding:8px 12px;border-radius:6px"><b>Beta — free, results may be wrong, not financial advice.</b></p>
+<h1>Check a Solana token before you buy</h1>
+<p>Paste a token address into our Telegram bot and get an on-chain risk check in about 15 seconds. Free during the beta.</p>
+<p><a class="btn" href="https://t.me/tokensafchebot"><b>Open @tokensafchebot in Telegram</b></a> → <code>/scan &lt;token address&gt;</code></p>
+<h2>What we check</h2>
+<table><tr><th>Check</th><th>Why it matters</th></tr>
+<tr><td>Mint &amp; freeze authority</td><td>Can the creator print new tokens or freeze your wallet?</td></tr>
+<tr><td>Token-2022 traps</td><td>Hidden transfer fees, transfer hooks, permanent delegates, pausable transfers</td></tr>
+<tr><td>Metadata changes</td><td>Can the name or details still be changed?</td></tr>
+<tr><td>LP burned / locked</td><td>Can the pool's liquidity be pulled?</td></tr>
+<tr><td>Holder concentration</td><td>Top-1 and top-10 wallets, pools and burn addresses excluded</td></tr>
+<tr><td>Creator history</td><td>How many tokens the creator launched before, and how many were abandoned</td></tr>
+<tr><td>Liquidity</td><td>Pool size and liquidity relative to market cap</td></tr>
+<tr><td>Scam lists</td><td>Public lists, split into <i>suspected</i> and <i>confirmed</i>, with source shown</td></tr></table>
+<h2>How to read the result</h2>
+<p><span class="v g">🟢 no red flags found</span><span class="v y">🟡 warnings</span><span class="v r">🔴 red flags</span></p>
+<p>“No red flags found” means our checks found nothing. It does <b>not</b> mean a token is safe. If we can't verify something, we show a red flag instead of guessing.</p>
+<h2>Watchlist</h2><p><code>/watch &lt;address&gt;</code> alerts you if a pool's liquidity drops sharply (free beta: 3 tokens).</p>
+<h2>Free beta limits</h2><p>30 scans per day, one every 20 seconds. Paid plans later (Pro, Trader, API), and beta users will hear first.</p>
+<p class="note">Not financial advice. Automated checks can be wrong or out of date. We never ask for your keys or seed phrase and never hold funds. See <a href="terms.html">Terms</a> and <a href="disclaimer.html">Disclaimer</a>. Operated by TokenSC · tokensc@mail.grokbot.com · Support is automated for speed and efficiency.</p>
+</body></html>
